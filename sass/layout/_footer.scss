@@ -1,0 +1,50 @@
+.footer {
+    padding: 5rem 0;
+    background-color: $color-dark-primary;
+    
+    &__copyright-text {
+        font-size: $small-font-size;
+        font-weight: 300;
+        text-align: center;
+        color: $color-light-primary;
+        padding: 1rem 0;
+    }
+    
+    &__logo {
+        text-align: center;
+        float: none;
+        vertical-align: top;
+    }
+    
+    &__social-icons {  
+        text-align: center;
+    }
+    
+    &__social-icons-list {
+        list-style-type: none;
+        margin-top: 1rem;
+    }
+    
+    &__social-icons-item {
+        display: inline-block;
+            &:not(:first-child) {
+                margin-left: 3rem;
+            }
+    }
+    
+    &__social-icons-link {
+        text-decoration: none;
+    }
+    
+    &__social-icons-img {
+        width: 3.4rem;
+        filter: invert(79%) sepia(52%) saturate(668%) hue-rotate(100deg) brightness(95%) contrast(93%);
+        transition: filter .2s;
+        
+        &:hover, &:focus {
+            filter: invert(92%) sepia(28%) saturate(477%) hue-rotate(91deg) brightness(102%) contrast(101%);
+        }
+        
+    }
+    
+}

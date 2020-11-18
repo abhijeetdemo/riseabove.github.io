@@ -1,0 +1,28 @@
+.btn {
+    &, &:link, &:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        font-size: $default-font-size;
+        font-family: inherit;
+        font-weight: 500;
+        background-color: $color-light-primary;
+        color: $color-background-primary;
+        border: 0;
+        cursor: pointer;
+        transition: .4s all;
+    }
+    
+    &:hover, &:active {
+        @include boxshadowSubtle;
+        background-color: $color-light-secondary;
+        color: $color-dark-primary;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    
+}

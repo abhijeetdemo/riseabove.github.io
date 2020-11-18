@@ -1,0 +1,92 @@
+.benefits__image {
+    &--img {
+        width: 100%;
+    }
+}
+
+.accordion {
+    
+    &__box {
+        width: 100%;
+        max-width: 50rem;      
+    }
+    
+    &__item {
+        background-color: #fafafa;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        box-shadow:  0 .2rem .5rem rgba($color-dark-primary, .2);
+    }
+    
+    &__link {
+        
+        &:link,&:visited {
+            text-decoration: none;
+            font-size: $small-font-size;
+            font-weight: 500;
+            color: $color-dark-primary;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+        
+        .icon-fwd, .icon-down {
+            color: $color-dark-primary;
+            font-size: $small-font-size+1;
+            padding: .5rem;
+        }
+        
+        .icon-down {
+            display: none;
+        }
+
+    }
+    
+    
+    //This is where the magic lies
+    &__answer {
+        overflow: hidden;
+        max-height: 0;
+        position: relative;
+        background-color: #fff;
+        transition: max-height 650ms;
+        backface-visibility: hidden;
+        
+        p {
+            font-size: $default-font-size;
+            padding: 1.5rem;
+            color: $color-dark-secondary;
+        }
+    }
+    
+    &__answer::before {
+        content:"";
+        position: absolute;
+        width: .6rem;
+        height: 90%;
+        background-color: $color-light-primary;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    
+    &__item:target &__answer {
+        max-height: 20rem;
+    }
+    
+    &__item:target .icon-fwd {
+        display: none;
+    }
+    
+    &__item:target .icon-down {
+        display: block;
+        color: $color-light-primary;
+    }
+    
+    &__item:target &__link {
+       color: $color-light-primary;
+    }
+    
+}

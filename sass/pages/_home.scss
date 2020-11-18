@@ -1,0 +1,17 @@
+//Everything in 'home' is specific to homepage and not to be found anywhere else
+
+.section-about {
+    background-color: $color-background-secondary;
+    padding: 10rem 0;
+}
+
+.section-benefits {
+    background-color: $color-background-primary;
+    padding: 10rem 0;
+    @include SwapPositionSmallScreen;
+}
+
+.section-contact {
+    background-color: $color-background-secondary;
+    padding: 10rem 0;
+}

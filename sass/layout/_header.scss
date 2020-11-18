@@ -1,0 +1,39 @@
+.header {
+    background-color: $color-background-primary;
+    padding-bottom: 10rem;
+    
+    &__content {
+        margin-top: 2rem;
+    }
+        
+    .header__img {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .btn-text {
+        font-size: $smaller-font-size;
+        font-weight: 500;
+        padding: .4rem;
+        
+        &:link, &:visited {
+            color: $color-light-primary;
+            text-decoration: none;
+            transition: all .2s;
+        }
+        
+        &:hover, &:active {
+            background-color: $color-light-primary;
+            color: $color-dark-primary;
+            @include boxshadowSubtle;
+        }
+        
+    }
+
+
+  @include SwapPositionSmallScreen;  
+
+
+}
+
