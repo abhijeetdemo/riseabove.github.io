@@ -1,12 +1,14 @@
 .navigation {
-    @include clearfix;
+    /* @include clearfix; */
+    display: flex;
+    justify-content: space-between;
     
     &__nav {
-       @include clearfix; 
+       /* @include clearfix; */ 
     }
     
     &__list {
-        float: right;
+        /* float: right; */
         list-style-type: none;
         margin-top: 1rem;
         margin-right: 10rem;

@@ -35,7 +35,7 @@
     
     
     &__label {
-        font-size: $default-font-size;
+        font-size: $smaller-font-size;
         color: $color-dark-tertiary;
         margin-left: 2.2rem;
         margin-top: .6rem;
@@ -59,7 +59,7 @@
 
     
     &__select, textarea {
-        font-size: $default-font-size;
+        font-size: $smaller-font-size;
         font-family: inherit;
         color: $color-dark-secondary;
         padding: 1.5rem 2rem;
